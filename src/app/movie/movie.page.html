@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>movie</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card *ngFor="let movie of movieData">
+    <img src="{{movie.Poster}}">
+    <ion-card-header>
+    <ion-card-subtitle>{{movie.Title}}</ion-card-subtitle>
+    <ion-card-title>{{movie.Year}}</ion-card-title>
+    </ion-card-header>
+    </ion-card>
+    <!-- <ion-list
+<!-- <ion-list> -->
+<!-- <ion-item *ngFor="let movie of movieData">
+<ion-item-group>
+<img src="{{movie.Poster}}">
+<ion-item-divider>
+<ion-label>{{movie.Title}}</ion-label>
+</ion-item-divider>
+<ion-item-divider>
+<ion-label>{{movie.Year}}</ion-label>
+</ion-item-divider>
+</ion-item-group>
+</ion-item>
+</ion-list> -->
+
+</ion-content>
